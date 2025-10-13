@@ -44,7 +44,10 @@
           <div class="columns is-centered">
             <div class="column has-text-centered">
               <h1 class="title is-1 publication-title">
-                From Spatial to Actions:<br />
+                <div style="display: flex; align-items: center; justify-content: center; gap: 3px; margin-bottom: 6px;">
+                  <img src="static/images/falcon_logo.png" alt="FALCON Icon" style="height: 60px; width: auto;">
+                  <span>From Spatial to Actions:</span>
+                </div>
                 Grounding Vision-Language-Action Model<br />
                 in Spatial Foundation Priors
               </h1>
@@ -228,20 +231,95 @@
         <div class="columns is-centered">
           <div class="column is-full">
             <h2 class="title is-3 has-text-centered">Experiment</h2>
-            <div style="display: flex; justify-content: center">
+            <!-- <div style="display: flex; justify-content: center">
               <div style="display: flex; justify-content: center">
                 <img src="./static/images/experiment_setup.png" alt="SpatialVLA Experiment Setup" class="image is-fullwidth" />
               </div>
-            </div>
+            </div> -->
             <p class="content has-text-justified mt-4">
-              We evaluate <span class="method-text">SpatialVLA</span> across 7 robot learning scenarios, 16 real-robot tasks, and 48 simulation setups, focusing on three key aspects: zero-shot
-              control, spatial understanding, and adaptability to new setups. We also conduct a thorough ablation study on a mixed Fractal and Bridge dataset to verify our design decisions.
+              For simulation, we evaluate <span class="method-text">FALCON</span> on the widely used benchmarks <b>CALVIN</b> and <b>SimplerEnv</b>. 
+              For real-world tasks, we design settings that span from simple interactions (e.g., <i>lifting a yellow pepper</i>) to long-horizon, spatially demanding activities (e.g., <i>placing a red coke can on the bottom shelf</i>), thereby thoroughly testing robustness and spatial reasoning.
+              We also conduct a thorough ablation study on CALVIN benchmark to validate key design choices in FALCON, including spatial token injection strategies and fusion mechanisms.
             </p>
-            <h3 class="title is-4 has-text-centered">Spatial Understanding</h3>
+            <h3 class="title is-4 has-text-centered">Base Tasks in Real-World</h3>
             <p class="content has-text-justified mb-4">
-              Benefiting from the proposed <b>Ego3D Position Encoding</b>, <span class="method-text">SpatialVLA</span> exhibits superior performance in understanding spatial prompts and complex
-              spatial layout tasks.
+              <b>Base Tasks</b> contains a total of nine distinct task suites, encompassing language grounding (cluttered scenes with random distractors) and semantic understanding (unseen object poses).
+              As shown below, FALCON achieves the highest average success rate of 70.0% across all nine task suites, outperforming the advanced method SpatialVLA (44.4%) by 25.6%. 
             </p>
+            <div class="has-text-centered mb-5">
+              <img src="./static/images/base_tasks_fig.png" alt="Base Tasks Results" style="max-width: 100%; height: auto;">
+            </div>
+
+            <div style="display: flex; justify-content: center">
+              <div style="width: 33%; height: auto; margin: 1%">
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">#1 lift the yellow pepper</p>
+                <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
+                  <source src="./static/videos/base_tasks/lift_the_yellow_pepper/rgb.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              <div style="width: 33%; height: auto; margin: 1%">
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">#2 pick banana and place on red plate</p>
+                <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
+                  <source src="./static/videos/base_tasks/pick_banana_and_place_on_red_plate/rgb.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              <div style="width: 33%; height: auto; margin: 1%">
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">#3 put carrot in the basket</p>
+                <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
+                  <source src="./static/videos/base_tasks/put_carrot_in_the_basket/rgb.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+
+            <!-- <p class="content has-text-justified mb-4">Instruction following, which involves operating on different objects within the same scene.</p> -->
+            <div style="display: flex; justify-content: center">
+              <div style="width: 33%; height: auto; margin: 1%">
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">put green cube on toy car</p>
+                <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
+                  <source src="./static/videos/efficient_finetuning/three_cube_g.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              <div style="width: 33%; height: auto; margin: 1%">
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">put blue cube on toy car</p>
+                <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
+                  <source src="./static/videos/efficient_finetuning/three_cube_b.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              <div style="width: 33%; height: auto; margin: 1%">
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">put orange on plate</p>
+                <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
+                  <source src="./static/videos/efficient_finetuning/orange.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+
+            <div style="display: flex; justify-content: center">
+              <div style="width: 33%; height: auto; margin: 1%">
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">put green cube on toy car</p>
+                <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
+                  <source src="./static/videos/efficient_finetuning/three_cube_g.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              <div style="width: 33%; height: auto; margin: 1%">
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">put blue cube on toy car</p>
+                <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
+                  <source src="./static/videos/efficient_finetuning/three_cube_b.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              <div style="width: 33%; height: auto; margin: 1%">
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">put orange on plate</p>
+                <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
+                  <source src="./static/videos/efficient_finetuning/orange.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+            
             <div style="display: flex; justify-content: center; flex-wrap: wrap; margin-bottom: 2%">
               <p class="content has-text-centered mb-1 text-prompt" style="width: 100%">"Place the plush toy closest to the white robot arm on the green car."</p>
               <video style="width: 45%; height: 250px; margin: 1%; object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
