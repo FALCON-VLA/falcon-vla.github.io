@@ -243,8 +243,8 @@
             </p>
             <h3 class="title is-4 has-text-centered">Base Tasks in Real-World</h3>
             <p class="content has-text-justified mb-4">
-              <b>Base Tasks</b> contains a total of nine distinct task suites, encompassing language grounding (cluttered scenes with random distractors) and semantic understanding (unseen object poses).
-              As shown below, FALCON achieves the highest average success rate of 70.0% across all nine task suites, outperforming the advanced method SpatialVLA (44.4%) by 25.6%. 
+              <b>Base Tasks</b> contains a total of nine distinct task suites, encompassing <b>language grounding</b> (cluttered scenes with random distractors) and <b>semantic understanding</b> (unseen object poses).
+              As demonstrated below, <span class="method-text">FALCON</span> achieves the highest average success rate of <b>70.0%</b> across all nine task suites, outperforming the advanced method SpatialVLA (44.4%) by <b>25.6%</b>. 
             </p>
             <div class="has-text-centered mb-5">
               <img src="./static/images/base_tasks_fig.png" alt="Base Tasks Results" style="max-width: 100%; height: auto;">
@@ -252,21 +252,21 @@
 
             <div style="display: flex; justify-content: center">
               <div style="width: 33%; height: auto; margin: 1%">
-                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">#1 lift the yellow pepper</p>
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black; height: 30px; display: flex; align-items: center; justify-content: center;">#1 lift the yellow pepper</p>
                 <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
                   <source src="./static/videos/base_tasks/lift_the_yellow_pepper/rgb.mp4" type="video/mp4" />
                 </video>
               </div>
 
               <div style="width: 33%; height: auto; margin: 1%">
-                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">#2 pick banana and place on red plate</p>
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black; height: 30px; display: flex; align-items: center; justify-content: center;">#2 pick banana and place on red plate</p>
                 <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
                   <source src="./static/videos/base_tasks/pick_banana_and_place_on_red_plate/rgb.mp4" type="video/mp4" />
                 </video>
               </div>
 
               <div style="width: 33%; height: auto; margin: 1%">
-                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">#3 put carrot in the basket</p>
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black; height: 30px; display: flex; align-items: center; justify-content: center;">#3 put carrot in the basket</p>
                 <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
                   <source src="./static/videos/base_tasks/put_carrot_in_the_basket/rgb.mp4" type="video/mp4" />
                 </video>
@@ -276,144 +276,154 @@
             <!-- <p class="content has-text-justified mb-4">Instruction following, which involves operating on different objects within the same scene.</p> -->
             <div style="display: flex; justify-content: center">
               <div style="width: 33%; height: auto; margin: 1%">
-                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">put green cube on toy car</p>
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black; height: 30px; display: flex; align-items: center; justify-content: center;">#4 put white cup on pink cloth</p>
                 <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
-                  <source src="./static/videos/efficient_finetuning/three_cube_g.mp4" type="video/mp4" />
+                  <source src="./static/videos/base_tasks/put_white_cup_on_pink_cloth/rgb.mp4" type="video/mp4" />
                 </video>
               </div>
 
               <div style="width: 33%; height: auto; margin: 1%">
-                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">put blue cube on toy car</p>
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black; height: 30px; display: flex; align-items: center; justify-content: center;">#5 stack blue block on red block</p>
                 <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
-                  <source src="./static/videos/efficient_finetuning/three_cube_b.mp4" type="video/mp4" />
+                  <source src="./static/videos/base_tasks/stack_blue_block_on_red_block/rgb.mp4" type="video/mp4" />
                 </video>
               </div>
 
               <div style="width: 33%; height: auto; margin: 1%">
-                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">put orange on plate</p>
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black; height: 30px; display: flex; align-items: center; justify-content: center;">#6 open drawer and place bread</p>
                 <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
-                  <source src="./static/videos/efficient_finetuning/orange.mp4" type="video/mp4" />
+                  <source src="./static/videos/base_tasks/open_drawer_and_place_bread/rgb.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>
 
             <div style="display: flex; justify-content: center">
               <div style="width: 33%; height: auto; margin: 1%">
-                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">put green cube on toy car</p>
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black; height: 30px; display: flex; align-items: center; justify-content: center;">#7 close the drawer</p>
                 <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
-                  <source src="./static/videos/efficient_finetuning/three_cube_g.mp4" type="video/mp4" />
+                  <source src="./static/videos/base_tasks/close_the_drawer/rgb.mp4" type="video/mp4" />
                 </video>
               </div>
 
               <div style="width: 33%; height: auto; margin: 1%">
-                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">put blue cube on toy car</p>
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black; font-size: 13px; height: 30px; display: flex; align-items: center; justify-content: center;">#8 place the red coke can on the bottom shelf</p>
                 <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
-                  <source src="./static/videos/efficient_finetuning/three_cube_b.mp4" type="video/mp4" />
+                  <source src="./static/videos/base_tasks/place_the_red_coke_can_on_the_bottom_shelf/rgb.mp4" type="video/mp4" />
                 </video>
               </div>
 
               <div style="width: 33%; height: auto; margin: 1%">
-                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">put orange on plate</p>
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black; font-size: 13px; height: 30px; display: flex; align-items: center; justify-content: center;">#9 place the green sprite can on the top shelf</p>
                 <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
-                  <source src="./static/videos/efficient_finetuning/orange.mp4" type="video/mp4" />
+                  <source src="./static/videos/base_tasks/place_the_green_sprite_can_on_the_top_shelf/rgb.mp4" type="video/mp4" />
                 </video>
               </div>
-            </div>
-            
-            <div style="display: flex; justify-content: center; flex-wrap: wrap; margin-bottom: 2%">
-              <p class="content has-text-centered mb-1 text-prompt" style="width: 100%">"Place the plush toy closest to the white robot arm on the green car."</p>
-              <video style="width: 45%; height: 250px; margin: 1%; object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
-                <source src="./static/videos/spatial_understanding/spatial_plush_toy_spatial_grasp_blue.mp4" type="video/mp4" />
-              </video>
-
-              <video style="width: 45%; height: 250px; margin: 1%; object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
-                <source src="./static/videos/spatial_understanding/spatial_plush_toy_spatial_grasp_red.mp4" type="video/mp4" />
-              </video>
-            </div>
-
-            <div style="display: flex; justify-content: center; flex-wrap: wrap">
-              <p class="content has-text-centered mb-1 text-prompt" style="width: 100%">"Put the green cup on the pink cloth."</p>
-              <video style="width: 45%; height: 250px; margin: 1%; object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
-                <source src="./static/videos/spatial_understanding/spatial_cup_on_stove.mp4" type="video/mp4" />
-              </video>
-
-              <video style="width: 45%; height: 250px; margin: 1%; object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
-                <source src="./static/videos/spatial_understanding/spatial_cup_on_yellow_block.mp4" type="video/mp4" />
-              </video>
-
-              <video style="width: 45%; height: 250px; margin: 1%; object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
-                <source src="./static/videos/spatial_understanding/spatial_cup_in_sink.mp4" type="video/mp4" />
-              </video>
-
-              <video style="width: 45%; height: 250px; margin: 1%; object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
-                <source src="./static/videos/spatial_understanding/spatial_cup_on_bowl_sink.mp4" type="video/mp4" />
-              </video>
             </div>
           </div>
         </div>
 
         <div class="columns is-centered">
           <div class="column content">
-            <h3 class="title is-4" style="text-align: center">Zero-shot Evaluation</h3>
+            <h3 class="title is-4" style="text-align: center">Few-shot Adaptation</h3>
             <p class="content has-text-justified mb-4">
-              We evaluate <span class="method-text">SpatialVLA</span> across 7 task suites to explore the <b>language grounding</b>, <b>semantic understanding</b>, and
-              <b>motion sensing</b> capabilities, with varying backgrounds, poses, and motion distractors. <span class="method-text">SpatialVLA</span> achieves the highest average success rate,
-              outperforming all generalist manipulation policies.
+              <b>Few-shot Adaptation</b> includes four challenging tasks selected from <b>Base Tasks</b> that require more spatial perception capabilities. 
+              For each task, we collected 20 demonstration trajectories. In addition to the base setting (denoted as <i>Simple</i> below), we introduce three unseen variations: 
+              <i>Unseen Object</i>, <i>Unseen Background</i> (by changing two different colored tablecloths), and <i>Unseen Task Description</i>, to evaluate the robustness and generalization of all models in low-data regimes.
+              As shown below, <span class="method-text">FALCON</span> achieves the highest performance across all settings, significantly outperforming the second-best model by <b>27.5%</b> in <i>Simple</i> and <b>27%</b> in <i>Unseen Average</i>.
             </p>
+            <div class="has-text-centered mb-5">
+              <img src="./static/images/few_shot_ada.png" alt="Few-shot Adaptation" style="max-width: 100%; height: auto;">
+            </div>
+
+            <p class="content has-text-centered mb-1 text-prompt" style="width: 100%; font-size: 24px;">Unseen Object</p>
             <div style="display: flex; justify-content: center">
               <div style="width: 23%; height: auto; margin: 1%">
-                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">average performance</p>
-                <img src="./static/images/widowx_zeroshot_performace.png" alt="Widowx_zeroshot" style="object-fit: fill; border: 1.5px solid #d3d3d3" />
-              </div>
-
-              <div style="width: 23%; height: auto; margin: 1%">
-                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">close microwave</p>
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black; font-size: 13px; height: 50px; display: flex; align-items: center; justify-content: center;">stack orange block on green block</p>
                 <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
-                  <source src="./static/videos/zero_shot_evaluation/close_microwave.mp4" type="video/mp4" />
+                  <source src="./static/videos/few_shot/unseen_obj/1.mp4" type="video/mp4" />
                 </video>
               </div>
 
               <div style="width: 23%; height: auto; margin: 1%">
-                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">lift red chill pepper</p>
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black; font-size: 13px; height: 50px; display: flex; align-items: center; justify-content: center;">open drawer and place tennis ball</p>
                 <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
-                  <source src="./static/videos/zero_shot_evaluation/lift_red_chill_pepper.mp4" type="video/mp4" />
+                  <source src="./static/videos/few_shot/unseen_obj/2.mp4" type="video/mp4" />
                 </video>
               </div>
 
               <div style="width: 23%; height: auto; margin: 1%">
-                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">put carrot in plate</p>
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black; font-size: 13px; height: 50px; display: flex; align-items: center; justify-content: center;">place the strawberry juice can on the bottom shelf</p>
                 <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
-                  <source src="./static/videos/zero_shot_evaluation/put_the_carrot_in_the_plate.mp4" type="video/mp4" />
+                  <source src="./static/videos/few_shot/unseen_obj/3.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              <div style="width: 23%; height: auto; margin: 1%">
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black; font-size: 13px; height: 50px; display: flex; align-items: center; justify-content: center;">place the grape juice can on the top shelf</p>
+                <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
+                  <source src="./static/videos/few_shot/unseen_obj/4.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>
 
+            <p class="content has-text-centered mb-1 text-prompt" style="width: 100%; font-size: 24px;">Unseen Background</p>
             <div style="display: flex; justify-content: center">
               <div style="width: 23%; height: auto; margin: 1%">
-                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">put eggplant in basket</p>
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black; font-size: 13px; height: 50px; display: flex; align-items: center; justify-content: center;">stack blue block on red block</p>
                 <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
-                  <source src="./static/videos/zero_shot_evaluation/put_the_eggplant_in_the_basket.mp4" type="video/mp4" />
+                  <source src="./static/videos/few_shot/unseen_bg/1.mp4" type="video/mp4" />
                 </video>
               </div>
 
               <div style="width: 23%; height: auto; margin: 1%">
-                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">put cup on white plate</p>
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black; font-size: 13px; height: 50px; display: flex; align-items: center; justify-content: center;">open drawer and place bread</p>
                 <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
-                  <source src="./static/videos/zero_shot_evaluation/put_purple_cup_on_the_white_plate.mp4" type="video/mp4" />
+                  <source src="./static/videos/few_shot/unseen_bg/2.mp4" type="video/mp4" />
                 </video>
               </div>
 
               <div style="width: 23%; height: auto; margin: 1%">
-                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">put cup on pink cloth</p>
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black; font-size: 13px; height: 50px; display: flex; align-items: center; justify-content: center;">place the red coke can on the bottom shelf</p>
                 <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
-                  <source src="./static/videos/zero_shot_evaluation/put_green_cup_on_the_pink_cloth.mp4" type="video/mp4" />
+                  <source src="./static/videos/few_shot/unseen_bg/3.mp4" type="video/mp4" />
                 </video>
               </div>
 
               <div style="width: 23%; height: auto; margin: 1%">
-                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black">put cup on pink cloth</p>
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black; font-size: 13px; height: 50px; display: flex; align-items: center; justify-content: center;">place the green sprite can on the top shelf</p>
                 <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
-                  <source src="./static/videos/zero_shot_evaluation/put_purple_cup_on_the_pink_cloth.mp4" type="video/mp4" />
+                  <source src="./static/videos/few_shot/unseen_bg/4.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+
+            <p class="content has-text-centered mb-1 text-prompt" style="width: 100%; font-size: 24px;">Unseen Task Description</p>
+            <div style="display: flex; justify-content: center">
+              <div style="width: 23%; height: auto; margin: 1%">
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black; font-size: 13px; height: 50px; display: flex; align-items: center; justify-content: center;">put the blue cube on top of the red cube</p>
+                <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
+                  <source src="./static/videos/few_shot/unseen_des/1.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              <div style="width: 23%; height: auto; margin: 1%">
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black; font-size: 13px; height: 50px; display: flex; align-items: center; justify-content: center;">unlock the drawer and put the bread inside</p>
+                <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
+                  <source src="./static/videos/few_shot/unseen_des/2.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              <div style="width: 23%; height: auto; margin: 1%">
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black; font-size: 13px; height: 50px; display: flex; align-items: center; justify-content: center;">put the red coke can on the lower shelf</p>
+                <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
+                  <source src="./static/videos/few_shot/unseen_des/3.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              <div style="width: 23%; height: auto; margin: 1%">
+                <p class="content has-text-centered mb-1" style="font-style: normal; font-weight: bold; color: black; font-size: 13px; height: 50px; display: flex; align-items: center; justify-content: center;">position the green sprite can on the upper shelf</p>
+                <video style="object-fit: fill" controls muted loading="lazy" autoplay loop playsinline>
+                  <source src="./static/videos/few_shot/unseen_des/4.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>
