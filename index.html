@@ -259,6 +259,19 @@
             margin: 30px 0;
         }
 
+        .base-tasks-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        @media (max-width: 768px) {
+            .base-tasks-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         .video-item {
             background: #f8f9fa;
             padding: 15px;
@@ -327,6 +340,17 @@
             line-height: 1.6;
             position: relative;
             border: 1px solid #e2e8f0;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            max-width: 100%;
+        }
+
+        .citation pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            max-width: 100%;
+            margin: 0;
         }
 
         .citation::before {
@@ -578,7 +602,7 @@
                     <img src="./static/images/base_tasks_fig.png" alt="Base Tasks Results" style="max-width: 100%; height: auto;">
                 </div>
 
-                <div class="video-grid">
+                <div class="base-tasks-grid">
                     <div class="video-item">
                         <p>#1 lift the yellow pepper</p>
                         <video controls muted loading="lazy" autoplay loop playsinline>
