@@ -127,8 +127,22 @@
             align-items: center;
             gap: 30px;
             margin: 30px auto;
-            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
             max-width: 1000px;
+        }
+
+        .logo-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .logo-row-primary {
+            justify-content: center;
         }
 
         .institution-logos img {
@@ -137,6 +151,10 @@
             object-fit: contain;
             transition: transform 0.3s ease;
             filter: grayscale(30%);
+        }
+
+        .institution-logos img.seed-logo {
+            height: 40px;
         }
 
         .institution-logos img:hover {
@@ -510,11 +528,15 @@
             </div>
 
             <div class="institution-logos">
-                <img src="static/images/bytedance_logo.png" alt="ByteDance Seed" title="ByteDance Seed" onerror="this.style.display='none'">
-                <img src="static/images/nus_logo.jpg" alt="National University of Singapore" title="National University of Singapore" onerror="this.style.display='none'">
-                <img src="static/images/NTU_Logo.png" alt="Nanyang Technological University" title="Nanyang Technological University" onerror="this.style.display='none'">
-                <img src="static/images/thu_logo.png" alt="Tsinghua University" title="Tsinghua University" onerror="this.style.display='none'">
-                <img src="static/images/smu_logo.jpg" alt="Singapore Management University" title="Singapore Management University" onerror="this.style.display='none'">
+                <div class="logo-row logo-row-primary">
+                    <img src="static/images/seed_logo.png" alt="ByteDance Seed" title="ByteDance Seed" class="seed-logo" onerror="this.style.display='none'">
+                </div>
+                <div class="logo-row logo-row-secondary">
+                    <img src="static/images/nus_logo.jpg" alt="National University of Singapore" title="National University of Singapore" onerror="this.style.display='none'">
+                    <img src="static/images/NTU_Logo.png" alt="Nanyang Technological University" title="Nanyang Technological University" onerror="this.style.display='none'">
+                    <img src="static/images/thu_logo.png" alt="Tsinghua University" title="Tsinghua University" onerror="this.style.display='none'">
+                    <img src="static/images/smu_logo.jpg" alt="Singapore Management University" title="Singapore Management University" onerror="this.style.display='none'">
+                </div>
             </div>
 
             <div class="keywords">
